@@ -29,3 +29,34 @@ body {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
 }
+
+:root {
+  --docker-blue: #2496ED;
+}
+
+.docker-logo {
+  height: 80px;
+  width: auto;
+}
+
+.hover-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background-color: var(--docker-blue);
+  border-color: var(--docker-blue);
+}
+
+.btn-primary:hover {
+  background-color: #1d7ac1;
+  border-color: #1d7ac1;
+}
+
+.text-primary {
+  color: var(--docker-blue) !important;
+}

@@ -1,10 +1,46 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Docker Web App Example";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container py-5">
+    <div class="text-center mb-5">
+        <img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Emblem.png" alt="Docker Logo" class="docker-logo mb-4" />
+        <h1 class="display-4 text-primary fw-bold">Welcome to Docker Web App</h1>
+        <p class="lead text-muted">Learn how to containerize ASP.NET Core applications with Docker</p>
+    </div>
+
+    <div class="row g-4 py-4">
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-card">
+                <div class="card-body">
+                    <h3 class="card-title text-primary"><i class="fas fa-cube"></i> Build</h3>
+                    <p class="card-text">Package your application into a standardized unit for software development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-card">
+                <div class="card-body">
+                    <h3 class="card-title text-primary"><i class="fas fa-ship"></i> Ship</h3>
+                    <p class="card-text">Ship your containerized application anywhere, anytime with confidence.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100 shadow-sm hover-card">
+                <div class="card-body">
+                    <h3 class="card-title text-primary"><i class="fas fa-play"></i> Run</h3>
+                    <p class="card-text">Run your application in any environment with container support.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="https://docs.docker.com/get-started/" class="btn btn-primary btn-lg px-4" target="_blank">
+            Get Started with Docker
+        </a>
+    </div>
 </div>
